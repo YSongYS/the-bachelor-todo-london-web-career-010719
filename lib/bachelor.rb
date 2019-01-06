@@ -1,10 +1,9 @@
 def get_first_name_of_season_winner(data, season)
-  data.each do |season_name, suiter|
-    puts season_name
-    if suiter.has_value?("Winner")
-      return suiter[:"name"]
-    end
-  end
+  data[season.to_sym].each do |contestant|
+    if contestant.has_value?("Winner")
+      return contestant[:"name"]
+    end 
+  end 
 end
 
 def get_contestant_name(data, occupation)
