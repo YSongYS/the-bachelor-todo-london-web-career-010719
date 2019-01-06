@@ -33,7 +33,7 @@ def get_occupation(data, hometown)
   data.each do |season_name,season_people|
     season_people.map do |contestant|
       if contestant.has_value?(hometown)
-        return contestant[:"occupation"]
+        return contestant.values[3]
       end
     end
   end
