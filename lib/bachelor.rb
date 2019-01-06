@@ -2093,4 +2093,4 @@ data =
 }
 
 
-get_contestant_name(data, "Real Estate Agent")
+count_contestants_by_hometown(data, "Lexington, Ohio")
