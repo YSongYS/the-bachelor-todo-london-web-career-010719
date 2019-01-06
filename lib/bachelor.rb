@@ -1,7 +1,7 @@
 def get_first_name_of_season_winner(data, season)
   data[season.to_sym].each do |contestant|
     if contestant.has_value?("Winner")
-      puts contestant[:"name"].split(" ")[0]
+      return contestant[:"name"].split(" ")[0]
     end
   end
 end
