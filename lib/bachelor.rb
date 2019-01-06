@@ -1,5 +1,5 @@
 def get_first_name_of_season_winner(data, season)
-  data[season.to_sym].each do |suiter|
+  data[season].each do |suiter|
     return suiter[:name].split(" ")[0] if suiter.has_value?("winner")
   end
 end
@@ -2075,5 +2075,7 @@ data =
       }
    ]
 }
+
+puts data
 
 get_first_name_of_season_winner(data, "season 19")
