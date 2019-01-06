@@ -2077,6 +2077,6 @@ data =
    ]
 }
 
-puts data[:"season19"]
+puts data[:"season30"]
 
 #get_first_name_of_season_winner(data, "season 19")
