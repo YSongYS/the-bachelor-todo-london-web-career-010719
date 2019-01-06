@@ -9,10 +9,10 @@ end
 def get_contestant_name(data, occupation)
   data.each do |season_name,season_people|
     season_people.each do |contestant|
-      if contestant.has_value(occupation)
+      if contestant.has_value?(occupation)
         return contestant[:"name"]
       end
-    end 
+    end
   end
 end
 
