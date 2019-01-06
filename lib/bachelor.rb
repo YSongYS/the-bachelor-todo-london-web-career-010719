@@ -11,8 +11,7 @@ def get_contestant_name(data, occupation)
   data.each do |season_name,season_people|
     season_people.map do |contestant|
       if contestant.has_value?(occupation)
-        return "Carly"
-        name = contestant[:"name"]
+        return contestant.values[0]
       end
     end
   end
