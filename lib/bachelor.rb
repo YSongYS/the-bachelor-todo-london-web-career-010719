@@ -11,9 +11,9 @@ def get_contestant_name(data, occupation)
     season_people.each do |contestant|
       if contestant.has_value(occupation)
         return contestant[:"name"]
-      end 
+      end
     end 
-  end 
+  end
 end
 
 def count_contestants_by_hometown(data, hometown)
@@ -2085,4 +2085,4 @@ data =
 }
 
 
-get_first_name_of_season_winner(data, "season 18")
+get_contestant_name(data, "Real Estate Agent")
