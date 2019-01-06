@@ -25,7 +25,7 @@ def count_contestants_by_hometown(data, hometown)
       end
     end
   end
-  puts counter
+  counter
 end
 
 def get_occupation(data, hometown)
