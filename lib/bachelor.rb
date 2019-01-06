@@ -39,11 +39,13 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
+  total_age = 0
+  number_of_people = 0 
   data[season.to_sym].each do |contestant|
-    if contestant.has_value?("Winner")
-      return contestant[:"name"].split(" ")[0]
-    end
+    total_age += contestant[:"age"].to_f
+    number_of_people += 1
   end
+  return total_age/number_of_people
 end
 
 data =
@@ -2103,4 +2105,4 @@ data =
 }
 
 
-get_occupation(data, "season 18")
+get_average_age_for_season(data, "season 18")
