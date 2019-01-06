@@ -20,7 +20,7 @@ def get_average_age_for_season(data, season)
   # code here
 end
 
-data = 
+data =
 {
    "season 19":[
       {
@@ -2076,4 +2076,4 @@ data =
    ]
 }
 
-puts data
+get_first_name_of_season_winner(data, "season 19")
