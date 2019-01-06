@@ -2099,4 +2099,4 @@ data =
 }
 
 
-count_contestants_by_hometown(data, "Lexington, Ohio")
+get_occupation(data, "Lexington, Ohio")
