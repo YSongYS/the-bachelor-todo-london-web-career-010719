@@ -17,7 +17,7 @@ def get_contestant_name(data, occupation)
 end
 
 def count_contestants_by_hometown(data, hometown)
-  countre = 0
+  counter = 0
   data.each do |season_name,season_people|
     season_people.each do |contestant|
       if contestant.has_value?(hometown)
