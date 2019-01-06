@@ -2105,4 +2105,4 @@ data =
 }
 
 
-get_contestant_name(data, "Cruise SHip Singer")
+get_contestant_name(data, "Cruise Ship Singer")
