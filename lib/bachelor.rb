@@ -1,5 +1,6 @@
 def get_first_name_of_season_winner(data, season)
   data.each do |season_name, suiter|
+    puts season_name
     if season_name == season.to_sym #&& suiter.has_value?("Winner")
       return suiter["name"]
     end
