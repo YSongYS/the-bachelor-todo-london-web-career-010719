@@ -11,10 +11,11 @@ def get_contestant_name(data, occupation)
   data.each do |season_name,season_people|
     season_people.map do |contestant|
       if contestant.has_value?(occupation)
-        return contestant[:"name"]
+        name << contestant[:"name"]
       end
     end
   end
+  return name
 end
 
 def count_contestants_by_hometown(data, hometown)
